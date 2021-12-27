@@ -10,10 +10,6 @@ login_url="https://i.hzmbus.com/webhtml/login"
 target_url = "https://i.hzmbus.com/webhtml/ticket_details?xlmc_1=%E9%A6%99%E6%B8%AF&xlmc_2=%E7%8F%A0%E6%B5%B7&xllb=1&xldm=HKGZHO&code_1=HKG&code_2=ZHO"
 
 class Concert(object):
-    def __init__(self):
-
-        self.status = 0         #状态,表示如今进行到何种程度
-        
     def set_cookie(self):
        self.driver.get(login_url)
        sleep(5)
@@ -87,7 +83,7 @@ class Concert(object):
                     sleep(0.5)
                     print('bottom')
                     bottom.click()
-                    sleep(2)
+                    sleep(1)
                 else:
                     self.capture()
             except Exception as e:
@@ -100,7 +96,7 @@ class Concert(object):
 
 def main():
     try:
-        con = Concert()             #具体如果填写请查看类中的初始化函数
+        con = Concert()
         con.enter_concert()
         con.choose_ticket(int(sys.argv[1]))
 
