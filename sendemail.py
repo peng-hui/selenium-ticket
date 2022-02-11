@@ -5,7 +5,7 @@ socks.setdefaultproxy(socks.PROXY_TYPE_HTTP, 'http://proxy.cse.cuhk.edu.hk', 800
 socks.wrapmodule(smtplib)
 
 gmail_user = 'lipenghui315@gmail.com'
-gmail_password = 'lipenghui0225'
+gmail_password = 'xxx'
 
 sent_from = gmail_user
 to = ['phli@cse.cuhk.edu.hk', 'phli@link.cuhk.edu.hk', 'lipenghui315@gmail.com', 'pl2689@icloud.com']
