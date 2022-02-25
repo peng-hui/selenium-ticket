@@ -11,3 +11,10 @@
 > 最后成功测试运行时间：2019-05-08。此方法太过于依赖页面源码的元素ID、xpath、class,若相应的绝对路径寻找不到会出现问题。建议自己先测试一遍，自行定位相应的绝对路径或用更好的定位方法替代。
 
 Wow, it has been around three years since I borrowed/used the code! Recently, I was about to buy the tickets for HZMB shuttle bus and did some modification above the previous version. However, there was not any available ticket thus I could not figure out the intended page for a success. Hopefully it will work :-)
+
+### Instruction
+```
+python3 buyticket.py xxxx
+# or 
+bash run.sh
+```

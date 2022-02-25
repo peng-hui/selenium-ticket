@@ -1,14 +1,14 @@
 import smtplib
 import socks
 #socks.setdefaultproxy(TYPE, ADDR, PORT)
-socks.setdefaultproxy(socks.PROXY_TYPE_HTTP, 'http://proxy.cse.cuhk.edu.hk', 8000)
-socks.wrapmodule(smtplib)
+#socks.setdefaultproxy(socks.PROXY_TYPE_HTTP, 'http://proxy.cse.cuhk.edu.hk', 8000)
+#socks.wrapmodule(smtplib)
 
 gmail_user = 'lipenghui315@gmail.com'
 gmail_password = 'xxx'
 
 sent_from = gmail_user
-to = ['phli@cse.cuhk.edu.hk', 'phli@link.cuhk.edu.hk', 'lipenghui315@gmail.com', 'pl2689@icloud.com']
+to = ['lipenghui315@gmail.com']
 subject = 'you received an email for ticket service'
 body = 'you might have bought (unpaid) tickets!!'
 
@@ -51,4 +51,3 @@ def send_email(user, pwd, recipient, subject, body):
         print ('successfully sent the mail')
     except:
         print ("failed to send mail")
-#send_email(gmail_user, gmail_password, to, subject, body)
